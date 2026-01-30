@@ -184,11 +184,11 @@ Standart Unity küpleriyle çalışırken Pivot noktalarını (Kapı menteşesi,
 
 Zorunlu gereksinimlerin dışında eklediklerim:
 
-1. **[Özellik Adı]**
+1. **Interaction Highlight System**
    - Açıklama: Oyuncu bir nesneye baktığında, nesne parlayarak (Emission) görsel geri bildirim verir.
    - Neden ekledim: Oyuncunun hangi nesneyle etkileşime geçeceğini net bir şekilde anlaması için
 
-2. **[Özellik Adı]**
+2. **Range Feedback**
    - Açıklama: Menzil dışındaki nesnelere bakıldığında UI'da "Too Far" uyarısı çıkar.
    - Neden ekledim: Oyuncunun sistemin bozuk olduğunu düşünmesini engellemek ve yaklaşması gerektiğini belirtmek için.
 
