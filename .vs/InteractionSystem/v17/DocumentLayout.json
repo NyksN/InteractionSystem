@@ -1,0 +1,241 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|c:\\users\\omer\\desktop\\interactionsystem\\assets\\luducase\\scripts\\runtime\\ui\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luducase\\scripts\\runtime\\ui\\inventoryui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|C:\\Users\\Omer\\Desktop\\InteractionSystem\\assets\\luducase\\scripts\\runtime\\ui\\interactionui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luducase\\scripts\\runtime\\ui\\interactionui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|C:\\Users\\Omer\\Desktop\\InteractionSystem\\assets\\luducase\\scripts\\runtime\\player\\simplefpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luducase\\scripts\\runtime\\player\\simplefpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|C:\\Users\\Omer\\Desktop\\InteractionSystem\\assets\\luducase\\scripts\\runtime\\player\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luducase\\scripts\\runtime\\player\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|C:\\Users\\Omer\\Desktop\\InteractionSystem\\assets\\luducase\\scripts\\runtime\\player\\interactiondetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luducase\\scripts\\runtime\\player\\interactiondetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|C:\\Users\\Omer\\Desktop\\InteractionSystem\\assets\\luducase\\scripts\\runtime\\interactables\\testinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luducase\\scripts\\runtime\\interactables\\testinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|C:\\Users\\Omer\\Desktop\\InteractionSystem\\assets\\luducase\\scripts\\runtime\\interactables\\switch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luducase\\scripts\\runtime\\interactables\\switch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|C:\\Users\\Omer\\Desktop\\InteractionSystem\\assets\\luducase\\scripts\\runtime\\interactables\\keypickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luducase\\scripts\\runtime\\interactables\\keypickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|c:\\users\\omer\\desktop\\interactionsystem\\assets\\luducase\\scripts\\runtime\\interactables\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luducase\\scripts\\runtime\\interactables\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|C:\\Users\\Omer\\Desktop\\InteractionSystem\\assets\\luducase\\scripts\\runtime\\interactables\\chest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luducase\\scripts\\runtime\\interactables\\chest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|C:\\Users\\Omer\\Desktop\\InteractionSystem\\assets\\luducase\\scripts\\runtime\\core\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luducase\\scripts\\runtime\\core\\itemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|C:\\Users\\Omer\\Desktop\\InteractionSystem\\assets\\luducase\\scripts\\runtime\\core\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luducase\\scripts\\runtime\\core\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|C:\\Users\\Omer\\Desktop\\InteractionSystem\\assets\\luducase\\scripts\\runtime\\core\\interactionhighlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{075B3CA0-5764-A0A4-530C-BD54FD534B0B}|Assembly-CSharp.csproj|solutionrelative:assets\\luducase\\scripts\\runtime\\core\\interactionhighlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InventoryUI.cs",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\UI\\InventoryUI.cs",
+              "RelativeDocumentMoniker": "Assets\\LuduCase\\Scripts\\Runtime\\UI\\InventoryUI.cs",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\UI\\InventoryUI.cs",
+              "RelativeToolTip": "Assets\\LuduCase\\Scripts\\Runtime\\UI\\InventoryUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T23:37:47.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "InteractionHighlight.cs",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Core\\InteractionHighlight.cs",
+              "RelativeDocumentMoniker": "Assets\\LuduCase\\Scripts\\Runtime\\Core\\InteractionHighlight.cs",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Core\\InteractionHighlight.cs",
+              "RelativeToolTip": "Assets\\LuduCase\\Scripts\\Runtime\\Core\\InteractionHighlight.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T23:17:14.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Chest.cs",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\Chest.cs",
+              "RelativeDocumentMoniker": "Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\Chest.cs",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\Chest.cs",
+              "RelativeToolTip": "Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\Chest.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAcwDcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T22:49:22.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InteractionUI.cs",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\UI\\InteractionUI.cs",
+              "RelativeDocumentMoniker": "Assets\\LuduCase\\Scripts\\Runtime\\UI\\InteractionUI.cs",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\UI\\InteractionUI.cs",
+              "RelativeToolTip": "Assets\\LuduCase\\Scripts\\Runtime\\UI\\InteractionUI.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAA9wCkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T22:45:17.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Switch.cs",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\Switch.cs",
+              "RelativeDocumentMoniker": "Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\Switch.cs",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\Switch.cs",
+              "RelativeToolTip": "Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\Switch.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAcwGkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T22:23:59.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "KeyPickup.cs",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\KeyPickup.cs",
+              "RelativeDocumentMoniker": "Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\KeyPickup.cs",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\KeyPickup.cs",
+              "RelativeToolTip": "Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\KeyPickup.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwB8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T22:17:27.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Player\\Inventory.cs",
+              "RelativeDocumentMoniker": "Assets\\LuduCase\\Scripts\\Runtime\\Player\\Inventory.cs",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Player\\Inventory.cs",
+              "RelativeToolTip": "Assets\\LuduCase\\Scripts\\Runtime\\Player\\Inventory.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwB4AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T22:13:14.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ItemData.cs",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Core\\ItemData.cs",
+              "RelativeDocumentMoniker": "Assets\\LuduCase\\Scripts\\Runtime\\Core\\ItemData.cs",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Core\\ItemData.cs",
+              "RelativeToolTip": "Assets\\LuduCase\\Scripts\\Runtime\\Core\\ItemData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T22:12:39.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Door.cs",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\Door.cs",
+              "RelativeDocumentMoniker": "Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\Door.cs",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\Door.cs",
+              "RelativeToolTip": "Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\Door.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T22:01:43.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SimpleFPSController.cs",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Player\\SimpleFPSController.cs",
+              "RelativeDocumentMoniker": "Assets\\LuduCase\\Scripts\\Runtime\\Player\\SimpleFPSController.cs",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Player\\SimpleFPSController.cs",
+              "RelativeToolTip": "Assets\\LuduCase\\Scripts\\Runtime\\Player\\SimpleFPSController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwEUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T21:57:20.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TestInteractable.cs",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\TestInteractable.cs",
+              "RelativeDocumentMoniker": "Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\TestInteractable.cs",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\TestInteractable.cs",
+              "RelativeToolTip": "Assets\\LuduCase\\Scripts\\Runtime\\Interactables\\TestInteractable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T21:54:30.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InteractionDetector.cs",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Player\\InteractionDetector.cs",
+              "RelativeDocumentMoniker": "Assets\\LuduCase\\Scripts\\Runtime\\Player\\InteractionDetector.cs",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Player\\InteractionDetector.cs",
+              "RelativeToolTip": "Assets\\LuduCase\\Scripts\\Runtime\\Player\\InteractionDetector.cs",
+              "ViewState": "AgIAALoAAAAAAAAAAAAcwKgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T21:51:03.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IInteractable.cs",
+              "DocumentMoniker": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Core\\IInteractable.cs",
+              "RelativeDocumentMoniker": "Assets\\LuduCase\\Scripts\\Runtime\\Core\\IInteractable.cs",
+              "ToolTip": "C:\\Users\\Omer\\Desktop\\InteractionSystem\\Assets\\LuduCase\\Scripts\\Runtime\\Core\\IInteractable.cs",
+              "RelativeToolTip": "Assets\\LuduCase\\Scripts\\Runtime\\Core\\IInteractable.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T21:48:36.844Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

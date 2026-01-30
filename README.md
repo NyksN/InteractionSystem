@@ -1,4 +1,4 @@
-# Interaction System - [Adınız Soyadınız]
+# Interaction System - Ömer Boyraz
 
 > Ludu Arts Unity Developer Intern Case
 
@@ -6,10 +6,10 @@
 
 | Bilgi | Değer |
 |-------|-------|
-| Unity Versiyonu | 20XX.X.XXf1 |
-| Render Pipeline | Built-in / URP / HDRP |
-| Case Süresi | X saat |
-| Tamamlanma Oranı | %XX |
+| Unity Versiyonu | 6000.3.0f1 |
+| Render Pipeline | Built-in |
+| Case Süresi | 4 saat |
+| Tamamlanma Oranı | %100 (Bonuslar Dahil: %85) |
 
 ---
 
@@ -17,11 +17,11 @@
 
 1. Repository'yi klonlayın:
 ```bash
-git clone https://github.com/[username]/[repo-name].git
+git clone https://github.com/NyksN/InteractionSystem.git
 ```
 
 2. Unity Hub'da projeyi açın
-3. `Assets/[ProjectName]/Scenes/TestScene.unity` sahnesini açın
+3. `Assets/LuduCase/Scenes/TestScene.unity` sahnesini açın
 4. Play tuşuna basın
 
 ---
@@ -35,23 +35,24 @@ git clone https://github.com/[username]/[repo-name].git
 | WASD | Hareket |
 | Mouse | Bakış yönü |
 | E | Etkileşim |
-| [Diğer] | [Açıklama] |
+| E (Basılı Tut) | Hold Interaction |
 
 ### Test Senaryoları
 
 1. **Door Test:**
-   - Kapıya yaklaşın, "Press E to Open" mesajını görün
+   - Koyu renkli kapıya yaklaşın, "Press E to Open" mesajını görün
    - E'ye basın, kapı açılsın
    - Tekrar basın, kapı kapansın
 
 2. **Key + Locked Door Test:**
    - Kilitli kapıya yaklaşın, "Locked - Key Required" mesajını görün
-   - Anahtarı bulun ve toplayın
+   - Kırmızı renkli anahtarı bulun ve toplayın
    - Kilitli kapıya geri dönün, şimdi açılabilir olmalı
 
 3. **Switch Test:**
    - Switch'e yaklaşın ve aktive edin
-   - Bağlı nesnenin (kapı/ışık vb.) tetiklendiğini görün
+   - Kilitli kapının tetiklendiğini görün
+   - Switch Kilitli kapıyı "Force Unlock" eder
 
 4. **Chest Test:**
    - Sandığa yaklaşın
@@ -62,17 +63,15 @@ git clone https://github.com/[username]/[repo-name].git
 
 ## Mimari Kararlar
 
-### Interaction System Yapısı
-
 ```
-[Mimari diyagram veya açıklama]
+Sistem IInteractable arayüzü ve InteractionDetector (Raycast) üzerine kuruludur.
 ```
 
 **Neden bu yapıyı seçtim:**
-> [Açıklama]
+> Bu yapıyı seçerek Player sınıfının, etkileşime geçtiği nesnenin türünü (Kapı mı, Sandık mı?) bilme zorunluluğunu ortadan kaldırdım. Bu sayede sisteme yeni bir etkileşimli nesne eklediğimde Player kodunda değişiklik yapılmasına gerek kalmadı. Raycast kullanımı ise FPS bakış açısında Trigger'a göre çok daha hassas ve doğru bir hedefleme sağladığı için kullandım.
 
 **Alternatifler:**
-> [Düşündüğünüz diğer yaklaşımlar ve neden seçmediniz]
+> Trigger Collider: Daha basit olurdu ancak oyuncunun arkasındaki veya yanındaki nesnelerle yanlışlıkla etkileşime girmesine yol açabilirdi.
 
 **Trade-off'lar:**
 > [Bu yaklaşımın avantaj ve dezavantajları]
@@ -81,9 +80,9 @@ git clone https://github.com/[username]/[repo-name].git
 
 | Pattern | Kullanım Yeri | Neden |
 |---------|---------------|-------|
-| [Observer] | [Event system] | [Açıklama] |
-| [State] | [Door states] | [Açıklama] |
-| [vb.] | | |
+| Strategy| IInteractable| Her nesnenin (Door, Chest) Interact metodunu farklı yorumlaması için. |
+| Observer | Switch (UnityEvents) | Switch ile tetiklenen nesneler arasındaki bağı koparmak için. |
+
 
 ---
 
@@ -93,36 +92,36 @@ git clone https://github.com/[username]/[repo-name].git
 
 | Kural | Uygulandı | Notlar |
 |-------|-----------|--------|
-| m_ prefix (private fields) | [x] / [ ] | |
-| s_ prefix (private static) | [x] / [ ] | |
-| k_ prefix (private const) | [x] / [ ] | |
-| Region kullanımı | [x] / [ ] | |
-| Region sırası doğru | [x] / [ ] | |
-| XML documentation | [x] / [ ] | |
-| Silent bypass yok | [x] / [ ] | |
-| Explicit interface impl. | [x] / [ ] | |
+| m_ prefix (private fields) | [x] / | Tüm scriptlerde uygulandı.|
+| s_ prefix (private static) | [x] /|Kullanılan yerlerde uygulandı. |
+| k_ prefix (private const) | [x] /| InteractionDetector vb. uygulandı.|
+| Region kullanımı | [x] /| Fields, Unity Methods, Methods şeklinde ayrıldı.|
+| Region sırası doğru | [x] /| Standartlara sadık kalındı.|
+| XML documentation | [x] / | Tüm public API ve Interface üyelerinde mevcut.|
+| Silent bypass yok | [x] / |Null referanslar için Error Log eklendi. |
+| Explicit interface impl. | [ ] /| Implicit tercih edildi (Inspector erişimi kolaylığı için).|
 
 ### Naming Convention
 
 | Kural | Uygulandı | Örnekler |
 |-------|-----------|----------|
-| P_ prefix (Prefab) | [x] / [ ] | P_Door, P_Chest |
-| M_ prefix (Material) | [x] / [ ] | M_Door_Wood |
-| T_ prefix (Texture) | [x] / [ ] | |
-| SO isimlendirme | [x] / [ ] | |
+| P_ prefix (Prefab) | [x] / [ ] | P_Door, P_Chest, P_Switch, P_Key_Red |
+| M_ prefix (Material) | [x] / [ ] | M_Door_Wood, M_Chest_Gold, M_Key_Red|
+| T_ prefix (Texture) | [ ] / [ ] | |
+| SO isimlendirme | [x] / [ ] | Item_RedKey|
 
 ### Prefab Kuralları
 
 | Kural | Uygulandı | Notlar |
 |-------|-----------|--------|
-| Transform (0,0,0) | [x] / [ ] | |
-| Pivot bottom-center | [x] / [ ] | |
-| Collider tercihi | [x] / [ ] | Box > Capsule > Mesh |
-| Hierarchy yapısı | [x] / [ ] | |
+| Transform (0,0,0) | [x] / [ ] | Tüm prefab rootları sıfırlandı.|
+| Pivot bottom-center | [x] / [ ] | Kapı ve Sandık pivotları için parent-child yapısı kuruldu.|
+| Collider tercihi | [x] / [ ] | Performans için Box Collider tercih edildi. |
+| Hierarchy yapısı | [x] / [ ] |Visual ve Logic objeleri ayrıldı. |
 
 ### Zorlandığım Noktalar
 > [Standartları uygularken zorlandığınız yerler]
-
+Standart Unity küpleriyle çalışırken Pivot noktalarını (Kapı menteşesi, Sandık kapağı) ayarlamak için hiyerarşik yapı kurmak gerekti. Ayrıca m_ prefix alışkanlığını kod yazarken sürekli kontrol etmek dikkat gerektirdi.
 ---
 
 ## Tamamlanan Özellikler
@@ -157,28 +156,27 @@ git clone https://github.com/[username]/[repo-name].git
 
 ### Bonus (Nice to Have)
 
-- [ ] Animation entegrasyonu
-- [ ] Sound effects
-- [ ] Multiple keys / color-coded
-- [ ] Interaction highlight
+- [x] Animation entegrasyonu
+- [x] Sound effects
+- [?] Multiple keys / color-coded
+- [x] Interaction highlight
 - [ ] Save/Load states
-- [ ] Chained interactions
+- [x] Chained interactions
 
 ---
 
 ## Bilinen Limitasyonlar
 
 ### Tamamlanamayan Özellikler
-1. [Özellik] - [Neden tamamlanamadı]
-2. [Özellik] - [Neden]
+1. Multiple keys / color-coded - Aslında mantığı hazır sadece farklı kapılar ve farklı anahtarlar eklemedim sahneyi boğmamak için.
+2. Save/Load states - "Player Prefs" ile yapmak istemedim "Json" yapısı kurmak çok zamanımı alacağı için tamamlamadım.
 
 ### Bilinen Bug'lar
-1. [Bug açıklaması] - [Reproduce adımları]
-2. [Bug]
+
 
 ### İyileştirme Önerileri
-1. [Öneri] - [Nasıl daha iyi olabilirdi]
-2. [Öneri]
+1. Tween kütüphanesi (DoTween) kullanılarak animasyonlar daha elastik yapılabilir.
+
 
 ---
 
@@ -187,11 +185,12 @@ git clone https://github.com/[username]/[repo-name].git
 Zorunlu gereksinimlerin dışında eklediklerim:
 
 1. **[Özellik Adı]**
-   - Açıklama: [Ne yapıyor]
-   - Neden ekledim: [Motivasyon]
+   - Açıklama: Oyuncu bir nesneye baktığında, nesne parlayarak (Emission) görsel geri bildirim verir.
+   - Neden ekledim: Oyuncunun hangi nesneyle etkileşime geçeceğini net bir şekilde anlaması için
 
 2. **[Özellik Adı]**
-   - ...
+   - Açıklama: Menzil dışındaki nesnelere bakıldığında UI'da "Too Far" uyarısı çıkar.
+   - Neden ekledim: Oyuncunun sistemin bozuk olduğunu düşünmesini engellemek ve yaklaşması gerektiğini belirtmek için.
 
 ---
 
@@ -199,23 +198,36 @@ Zorunlu gereksinimlerin dışında eklediklerim:
 
 ```
 Assets/
-├── [ProjectName]/
+├── TextMeshPro/
+├── LuduCase/
 │   ├── Scripts/
 │   │   ├── Runtime/
 │   │   │   ├── Core/
 │   │   │   │   ├── IInteractable.cs
-│   │   │   │   └── ...
+│   │   │   │   ├── ItemData.cs
+│   │   │   │   └── InteractionHighlight.cs
 │   │   │   ├── Interactables/
 │   │   │   │   ├── Door.cs
-│   │   │   │   └── ...
+│   │   │   │   ├── Chest.cs
+│   │   │   │   ├── Switch.cs
+│   │   │   │   ├── KeyPickup.cs
+│   │   │   │   └── TestInteractable.cs
 │   │   │   ├── Player/
-│   │   │   │   └── ...
+│   │   │   │   ├── InteractionDetector.cs
+│   │   │   │   ├── Inventory.cs
+│   │   │   │   └── SimpleFPSController.cs
 │   │   │   └── UI/
-│   │   │       └── ...
-│   │   └── Editor/
+│   │   │       ├── InteractionUI.cs
+│   │   │       └── InventoryUI.cs
 │   ├── ScriptableObjects/
+│   │   ├── Items/
+│   │   │   ├── Item_RedKey.asset
 │   ├── Prefabs/
+│   │   ├── Interactables/
+│   │   ├── Player/
+│   │   ├── UI/
 │   ├── Materials/
+│   ├── Audios/
 │   └── Scenes/
 │       └── TestScene.unity
 ├── Docs/
@@ -225,7 +237,6 @@ Assets/
 ├── README.md
 ├── PROMPTS.md
 └── .gitignore
-```
 
 ---
 
@@ -233,10 +244,10 @@ Assets/
 
 | Bilgi | Değer |
 |-------|-------|
-| Ad Soyad | [Adınız] |
-| E-posta | [email@example.com] |
-| LinkedIn | [profil linki] |
-| GitHub | [github.com/username] |
+| Ad Soyad | Ömer Boyraz |
+| E-posta | omersg23@gmail.com |
+| LinkedIn | https://www.linkedin.com/in/ömer-boyraz-57540122b/ |
+| GitHub | [github.com/NyksN] |
 
 ---
 

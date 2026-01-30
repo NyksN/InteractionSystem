@@ -1,104 +1,92 @@
 # LLM Kullanım Dokümantasyonu
 
-> Bu dosyayı case boyunca kullandığınız LLM (ChatGPT, Claude, Copilot vb.) etkileşimlerini belgelemek için kullanın.
-> Dürüst ve detaylı dokümantasyon beklenmektedir.
-
 ## Özet
 
 | Bilgi | Değer |
 |-------|-------|
-| Toplam prompt sayısı | X |
-| Kullanılan araçlar | ChatGPT / Claude / Copilot |
-| En çok yardım alınan konular | [liste] |
-| Tahmini LLM ile kazanılan süre | X saat |
+| Toplam prompt sayısı | 2 |
+| Kullanılan araçlar | Gemini 3 Pro |
+| En çok yardım alınan konular | Mimari Tasarım, Coding Conventions Kontrolü |
+| Tahmini LLM ile kazanılan süre | 2.5 - 3 saat |
 
 ---
 
-## Prompt 1: [Konu Başlığı]
+## Prompt 1: Proje Kurulumu ve Klasör Mimarisi
 
-**Araç:** [ChatGPT-4 / Claude / GitHub Copilot]
-**Tarih/Saat:** YYYY-MM-DD HH:MM
+**Araç:** Gemini 3 Pro
+**Tarih/Saat:** 2026-01-29 23:45
 
 **Prompt:**
 ```
-[Yazdığınız prompt - tam metin]
+Bu dosyada belirtilen proje yapısına ve Convention kurallarına tam uyum sağlamak istiyorum. Bana oluşturmam gereken klasör hiyerarşisini ve Assets altındaki düzeni liste halinde verir misin? Ayrıca proje standartlarını kaçırmamak için bir checklist oluştur.
 ```
 
 **Alınan Cevap (Özet):**
 ```
-[Cevabın özeti veya önemli kısımlar - çok uzunsa kısaltabilirsiniz]
+Case dokümanındaki zorunlu klasör yapısı (Scripts/Runtime/Core vb.) ve Docs klasörüne konulması gereken dosyalar listelendi. Naming convention'a uygun klasör isimlendirmeleri (PascalCase) ile bir ağaç yapısı sunuldu.
 ```
 
 **Nasıl Kullandım:**
-- [ ] Direkt kullandım (değişiklik yapmadan)
+- [x] Direkt kullandım (değişiklik yapmadan)
 - [ ] Adapte ettim (değişiklikler yaparak)
 - [ ] Reddettim (kullanmadım)
 
 **Açıklama:**
-> [Bu promptu neden yaptığınızı ve cevabın nasıl yardımcı olduğunu açıklayın.
-> Eğer reddettiyseniz, neden uygun bulmadığınızı belirtin.]
+> Projenin temelini atarken klasör isimlendirme hataları veya eksik dosya konumu gibi basit hatalarla puan kaybetmemek için, standartları analiz ettirip temiz bir başlangıç yapmayı tercih ettim.
+
 
 **Yapılan Değişiklikler (adapte ettiyseniz):**
 > [LLM cevabını nasıl değiştirdiğinizi açıklayın]
 
----
 
-## Prompt 2: [Konu Başlığı]
+## Prompt 2: Core Interface ve InteractionDetector Tasarımı
 
-**Araç:** [ChatGPT-4 / Claude / GitHub Copilot]
-**Tarih/Saat:** YYYY-MM-DD HH:MM
+**Araç:** Gemini 3 Pro
+**Tarih/Saat:** 2026-01-30 00:05
 
 **Prompt:**
 ```
-[Yazdığınız prompt]
+IInteractable adında, InteractionType (Hold, Instant, Toggle) enum'ı içeren bir interface tasarla bunun yanında InteractionDetector adında, Raycast ile nesneleri algılayan, menzil kontrolü yapan veri gönderen bir script yaz.
+
 ```
 
 **Alınan Cevap (Özet):**
 ```
-[Cevap özeti]
+SOLID prensiplerine uygun, XML dokümantasyonları olmayan bir Interface ve Raycast logic'i içeren Detector scripti sağlandı.
 ```
 
 **Nasıl Kullandım:**
 - [ ] Direkt kullandım
-- [ ] Adapte ettim
+- [x] Adapte ettim
 - [ ] Reddettim
 
 **Açıklama:**
-> [Açıklama]
+> Temel Raycast mantığını tekrar yazmak yerine taslağı alıp, kendi UI sistemime (InteractionUI) entegre ettim.
 
+**Yapılan Değişiklikler (adapte ettiyseniz):**
+> Door scriptinde "Anahtar yoksa kilidi aç" mantığı hatalıydı null hatası vermiyordu ve kapı yinede açılıyordu, düzelttim.
 ---
 
-## Prompt 3: ...
 
-[Diğer promptlar için aynı formatı kullanın]
-
----
 
 ## Genel Değerlendirme
 
 ### LLM'in En Çok Yardımcı Olduğu Alanlar
-1. [Alan 1]
-2. [Alan 2]
-3. [Alan 3]
+1. Standartlara Uyum: Özellikle `m_` prefixleri ve XML Documentation gibi unutulabilecek angarya işleri hatasız yaptı.
+2. **Mimari Tasarım: Klasör yapısı ve Interface ayrımı konusunda zaman kazandırdı.
+
 
 ### LLM'in Yetersiz Kaldığı Alanlar
-1. [Alan 1 - neden yetersiz kaldığı]
-2. [Alan 2]
+1. [Oyun Mantığı - hala mantık kuramıyor]
+
 
 ### LLM Kullanımı Hakkında Düşüncelerim
-> [Bu case boyunca LLM kullanarak neler öğrendiniz?
-> LLM'siz ne kadar sürede bitirebilirdiniz?
-> Gelecekte LLM'i nasıl daha etkili kullanabilirsiniz?]
+> Bu case boyunca LLM kullanarak neler öğrendiniz? : Asistana sahip olduğumu
+> LLM'siz ne kadar sürede bitirebilirdiniz? : 2 saat eklerdi en az 
+> Gelecekte LLM'i nasıl daha etkili kullanabilirsiniz? : Yerel "Ai" lar kurarak daha hızlı ve ram şişmeden hızlıca kullanabilirim. Promptlarımı geliştirerek daha sonuç odaklı cevaplar alabilirim.
 
 ---
 
-## Notlar
 
-- Her önemli LLM etkileşimini kaydedin
-- Copy-paste değil, anlayarak kullandığınızı gösterin
-- LLM'in hatalı cevap verdiği durumları da belirtin
-- Dürüst olun - LLM kullanımı teşvik edilmektedir
-
----
 
 *Bu şablon Ludu Arts Unity Intern Case için hazırlanmıştır.*
